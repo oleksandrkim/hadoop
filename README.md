@@ -81,7 +81,8 @@ public class weatherDriver extends Configured implements Tool {
 		System.exit(exitCode);
 	}}
 ```
- 
+<br>
+   
 **Mapper**
 
 ```
@@ -154,7 +155,8 @@ public class weatherMapper extends Mapper<LongWritable, Text, IntWritable, Doubl
 	
 }
 ```
-
+<br>
+  
 **Reducer**
 
 ```
@@ -199,7 +201,8 @@ public class weatherReducer extends Reducer<IntWritable, DoubleWritable, IntWrit
 	
 }
 ```
-
+<br>
+  
 **Log**
 
 ```hirwuser864@ip-172-31-45-217:~$ hadoop jar /home/hirwuser864/weather/weather.jar com.mop.weather.weatherDriver -libjars /hirw-workshop/mapreduce/facebook/json-simple-1.1.jar /user/hirwuser864/weather_input/input/ /user/hirwuser864/weather_output
@@ -276,7 +279,8 @@ public class weatherReducer extends Reducer<IntWritable, DoubleWritable, IntWrit
         File Output Format Counters
                 Bytes Written=335
 ```
-
+<br>
+  
 ## Output
 >1       2.0919354838709685 <br>
 >2       7.350701754385967 <br>
